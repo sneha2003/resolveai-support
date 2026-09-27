@@ -1,0 +1,6 @@
+retriever,hit_rate@5,recall@5,precision@5,mrr,ndcg@5
+dense,0.58,0.3333,0.116,0.4717,0.5364
+bm25,0.56,0.44,0.148,0.4367,0.4921
+hybrid,0.56,0.43,0.144,0.45,0.5484
+hybrid_rewrite,0.86,0.53,0.204,0.6483,0.5358
+hybrid_rewrite_rerank,0.74,0.46,0.176,0.7267,0.6835

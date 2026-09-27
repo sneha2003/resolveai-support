@@ -1,0 +1,102 @@
+[
+  {
+    "id": "INC-2025-003",
+    "title": "Redis eviction caused authentication refresh failures",
+    "service": "authentication-service",
+    "date": "2025-02-03",
+    "version": "5.0",
+    "error": "CACHE-118",
+    "cause": "a volatile-lru policy evicted refresh-token state during a campaign traffic spike",
+    "fix": "reserved memory and changed the token cache to noeviction"
+  },
+  {
+    "id": "INC-2025-007",
+    "title": "Order events accumulated after consumer rebalance storm",
+    "service": "order-service",
+    "date": "2025-03-14",
+    "version": "3.7",
+    "error": "KAFKA-301",
+    "cause": "a Kubernetes rollout restarted every consumer in the group inside one session timeout",
+    "fix": "set maxUnavailable to one and introduced a termination drain hook"
+  },
+  {
+    "id": "INC-2025-011",
+    "title": "Inventory reservations conflicted during replay",
+    "service": "inventory-service",
+    "date": "2025-04-22",
+    "version": "2.9",
+    "error": "INV-409",
+    "cause": "replayed reservation messages used a non-stable operation key",
+    "fix": "deployed 2.9.1 with deterministic reservation idempotency keys"
+  },
+  {
+    "id": "INC-2025-018",
+    "title": "Checkout failures after Payment Service 4.2 rollout",
+    "service": "payment-service",
+    "date": "2025-06-18",
+    "version": "4.2",
+    "error": "DB-104",
+    "cause": "4.2 applied a fixed pool maximum of 40 per pod; with PostgreSQL 16 and 12 replicas this exhausted the 300-session database budget",
+    "fix": "reduced maximumSize to 24 and minimumIdle to 6, then deployed 4.2.1"
+  },
+  {
+    "id": "INC-2025-024",
+    "title": "Payment authorization ambiguity during processor latency",
+    "service": "payment-service",
+    "date": "2025-08-09",
+    "version": "4.2.1",
+    "error": "PAY-307",
+    "cause": "the provider response crossed the client deadline after authorization committed",
+    "fix": "reconciled by idempotency key and disabled unsafe automatic retry"
+  },
+  {
+    "id": "INC-2025-031",
+    "title": "Catalog search returned stale prices",
+    "service": "catalog-service",
+    "date": "2025-10-02",
+    "version": "6.3",
+    "error": "SEARCH-206",
+    "cause": "an OpenSearch alias switch completed before the price enrichment consumer caught up",
+    "fix": "gated alias promotion on consumer watermark"
+  },
+  {
+    "id": "INC-2025-037",
+    "title": "Gateway throttled trusted batch clients",
+    "service": "api-gateway",
+    "date": "2025-11-19",
+    "version": "7.1",
+    "error": "GW-429",
+    "cause": "client identity normalization dropped the tenant partition from rate-limit keys",
+    "fix": "restored tenant-aware keys and replayed rejected batches"
+  },
+  {
+    "id": "INC-2026-002",
+    "title": "Order confirmation delayed by Kafka lag",
+    "service": "order-service",
+    "date": "2026-01-12",
+    "version": "3.7.2",
+    "error": "KAFKA-301",
+    "cause": "a schema-registry timeout triggered repeated consumer restarts rather than the earlier rollout rebalance pattern",
+    "fix": "pinned the cached schema and raised registry circuit-breaker tolerance"
+  },
+  {
+    "id": "INC-2026-006",
+    "title": "Notification provider backpressure",
+    "service": "notification-service",
+    "date": "2026-02-21",
+    "version": "2.2",
+    "error": "NOTIFY-429",
+    "cause": "provider quotas were shared across transactional and campaign traffic",
+    "fix": "split quota pools and prioritized transactional topics"
+  },
+  {
+    "id": "INC-2026-010",
+    "title": "Customer merge deadlocks",
+    "service": "customer-service",
+    "date": "2026-03-17",
+    "version": "2.5",
+    "error": "DB-211",
+    "cause": "two merge workers locked customer identities in opposite order",
+    "fix": "ordered locks by canonical customer ID and serialized duplicate merge keys"
+  }
+]

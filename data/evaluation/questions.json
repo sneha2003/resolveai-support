@@ -1,0 +1,539 @@
+[
+  {
+    "id": "eval-001",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16?",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-002",
+    "question": "Which incident was associated with DB-104?",
+    "expected_document_ids": [
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-003",
+    "question": "How was DB-104 permanently fixed?",
+    "expected_document_ids": [
+      "REL-PAY-4.2.1",
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-004",
+    "question": "Have we had previous Kafka consumer lag incidents affecting Order Service?",
+    "expected_document_ids": [
+      "INC-2025-007",
+      "INC-2026-002"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "multi_document",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-005",
+    "question": "What does PAY-307 mean and which versions are affected?",
+    "expected_document_ids": [
+      "DOC-ERR-001",
+      "REL-PAY-4.3",
+      "INC-2025-024"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-006",
+    "question": "What is the recommended pool configuration for Payment Service 4.2.1?",
+    "expected_document_ids": [
+      "DB-MIG-016",
+      "REL-PAY-4.2.1"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-007",
+    "question": "What quantum-computing provider does Nexora use?",
+    "expected_document_ids": [],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "unanswerable",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-008",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16? (scenario 2)",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-009",
+    "question": "Which incident was associated with DB-104? (scenario 2)",
+    "expected_document_ids": [
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-010",
+    "question": "How was DB-104 permanently fixed? (scenario 2)",
+    "expected_document_ids": [
+      "REL-PAY-4.2.1",
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-011",
+    "question": "Have we had previous Kafka consumer lag incidents affecting Order Service? (scenario 2)",
+    "expected_document_ids": [
+      "INC-2025-007",
+      "INC-2026-002"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "multi_document",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-012",
+    "question": "What does PAY-307 mean and which versions are affected? (scenario 2)",
+    "expected_document_ids": [
+      "DOC-ERR-001",
+      "REL-PAY-4.3",
+      "INC-2025-024"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-013",
+    "question": "What is the recommended pool configuration for Payment Service 4.2.1? (scenario 2)",
+    "expected_document_ids": [
+      "DB-MIG-016",
+      "REL-PAY-4.2.1"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-014",
+    "question": "What quantum-computing provider does Nexora use? (scenario 2)",
+    "expected_document_ids": [],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "unanswerable",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-015",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16? (scenario 3)",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-016",
+    "question": "Which incident was associated with DB-104? (scenario 3)",
+    "expected_document_ids": [
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-017",
+    "question": "How was DB-104 permanently fixed? (scenario 3)",
+    "expected_document_ids": [
+      "REL-PAY-4.2.1",
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-018",
+    "question": "Have we had previous Kafka consumer lag incidents affecting Order Service? (scenario 3)",
+    "expected_document_ids": [
+      "INC-2025-007",
+      "INC-2026-002"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "multi_document",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-019",
+    "question": "What does PAY-307 mean and which versions are affected? (scenario 3)",
+    "expected_document_ids": [
+      "DOC-ERR-001",
+      "REL-PAY-4.3",
+      "INC-2025-024"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-020",
+    "question": "What is the recommended pool configuration for Payment Service 4.2.1? (scenario 3)",
+    "expected_document_ids": [
+      "DB-MIG-016",
+      "REL-PAY-4.2.1"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-021",
+    "question": "What quantum-computing provider does Nexora use? (scenario 3)",
+    "expected_document_ids": [],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "unanswerable",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-022",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16? (scenario 4)",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-023",
+    "question": "Which incident was associated with DB-104? (scenario 4)",
+    "expected_document_ids": [
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-024",
+    "question": "How was DB-104 permanently fixed? (scenario 4)",
+    "expected_document_ids": [
+      "REL-PAY-4.2.1",
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-025",
+    "question": "Have we had previous Kafka consumer lag incidents affecting Order Service? (scenario 4)",
+    "expected_document_ids": [
+      "INC-2025-007",
+      "INC-2026-002"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "multi_document",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-026",
+    "question": "What does PAY-307 mean and which versions are affected? (scenario 4)",
+    "expected_document_ids": [
+      "DOC-ERR-001",
+      "REL-PAY-4.3",
+      "INC-2025-024"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-027",
+    "question": "What is the recommended pool configuration for Payment Service 4.2.1? (scenario 4)",
+    "expected_document_ids": [
+      "DB-MIG-016",
+      "REL-PAY-4.2.1"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-028",
+    "question": "What quantum-computing provider does Nexora use? (scenario 4)",
+    "expected_document_ids": [],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "unanswerable",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-029",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16? (scenario 5)",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-030",
+    "question": "Which incident was associated with DB-104? (scenario 5)",
+    "expected_document_ids": [
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-031",
+    "question": "How was DB-104 permanently fixed? (scenario 5)",
+    "expected_document_ids": [
+      "REL-PAY-4.2.1",
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-032",
+    "question": "Have we had previous Kafka consumer lag incidents affecting Order Service? (scenario 5)",
+    "expected_document_ids": [
+      "INC-2025-007",
+      "INC-2026-002"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "multi_document",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-033",
+    "question": "What does PAY-307 mean and which versions are affected? (scenario 5)",
+    "expected_document_ids": [
+      "DOC-ERR-001",
+      "REL-PAY-4.3",
+      "INC-2025-024"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-034",
+    "question": "What is the recommended pool configuration for Payment Service 4.2.1? (scenario 5)",
+    "expected_document_ids": [
+      "DB-MIG-016",
+      "REL-PAY-4.2.1"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-035",
+    "question": "What quantum-computing provider does Nexora use? (scenario 5)",
+    "expected_document_ids": [],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "unanswerable",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-036",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16? (scenario 6)",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-037",
+    "question": "Which incident was associated with DB-104? (scenario 6)",
+    "expected_document_ids": [
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-038",
+    "question": "How was DB-104 permanently fixed? (scenario 6)",
+    "expected_document_ids": [
+      "REL-PAY-4.2.1",
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-039",
+    "question": "Have we had previous Kafka consumer lag incidents affecting Order Service? (scenario 6)",
+    "expected_document_ids": [
+      "INC-2025-007",
+      "INC-2026-002"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "multi_document",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-040",
+    "question": "What does PAY-307 mean and which versions are affected? (scenario 6)",
+    "expected_document_ids": [
+      "DOC-ERR-001",
+      "REL-PAY-4.3",
+      "INC-2025-024"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-041",
+    "question": "What is the recommended pool configuration for Payment Service 4.2.1? (scenario 6)",
+    "expected_document_ids": [
+      "DB-MIG-016",
+      "REL-PAY-4.2.1"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-042",
+    "question": "What quantum-computing provider does Nexora use? (scenario 6)",
+    "expected_document_ids": [],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "unanswerable",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-043",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16? (scenario 7)",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-044",
+    "question": "Which incident was associated with DB-104? (scenario 7)",
+    "expected_document_ids": [
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-045",
+    "question": "How was DB-104 permanently fixed? (scenario 7)",
+    "expected_document_ids": [
+      "REL-PAY-4.2.1",
+      "INC-2025-018"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-046",
+    "question": "Have we had previous Kafka consumer lag incidents affecting Order Service? (scenario 7)",
+    "expected_document_ids": [
+      "INC-2025-007",
+      "INC-2026-002"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "multi_document",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-047",
+    "question": "What does PAY-307 mean and which versions are affected? (scenario 7)",
+    "expected_document_ids": [
+      "DOC-ERR-001",
+      "REL-PAY-4.3",
+      "INC-2025-024"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "exact_identifier",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-048",
+    "question": "What is the recommended pool configuration for Payment Service 4.2.1? (scenario 7)",
+    "expected_document_ids": [
+      "DB-MIG-016",
+      "REL-PAY-4.2.1"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "version_sensitive",
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-049",
+    "question": "What quantum-computing provider does Nexora use? (scenario 7)",
+    "expected_document_ids": [],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "unanswerable",
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-050",
+    "question": "What caused DB-104 after upgrading Payment Service to version 4.2 on PostgreSQL 16? (scenario 8)",
+    "expected_document_ids": [
+      "INC-2025-018",
+      "REL-PAY-4.2.1",
+      "DB-MIG-016"
+    ],
+    "expected_answer_summary": "Retrieve the cited canonical records and avoid unsupported claims.",
+    "category": "incident_resolution",
+    "difficulty": "medium"
+  }
+]

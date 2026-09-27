@@ -1,0 +1,277 @@
+{
+  "PAY-201": {
+    "service": "payment-service",
+    "severity": "SEV-3",
+    "description": "payment-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "PAY-307": {
+    "service": "payment-service",
+    "severity": "SEV-3",
+    "description": "Payment authorization result remained indeterminate after the upstream processor deadline.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Query the provider by idempotency key; never blindly repeat authorization. Fixed retry classification ships in 4.3."
+  },
+  "DB-104": {
+    "service": "payment-service",
+    "severity": "SEV-2",
+    "description": "Database connection acquisition timed out before a checkout transaction could begin.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "For Payment Service 4.2 on PostgreSQL 16 set checkout pool maximumSize to 24, minimumIdle to 6, connectionTimeoutMs to 3000, then deploy 4.2.1, which restores version-aware pool sizing."
+  },
+  "DB-207": {
+    "service": "payment-service",
+    "severity": "SEV-3",
+    "description": "payment-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "ORD-502": {
+    "service": "order-service",
+    "severity": "SEV-2",
+    "description": "order-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "ORD-504": {
+    "service": "order-service",
+    "severity": "SEV-3",
+    "description": "order-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "KAFKA-301": {
+    "service": "order-service",
+    "severity": "SEV-3",
+    "description": "order-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "AUTH-401": {
+    "service": "authentication-service",
+    "severity": "SEV-2",
+    "description": "authentication-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "AUTH-429": {
+    "service": "authentication-service",
+    "severity": "SEV-3",
+    "description": "authentication-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "CACHE-118": {
+    "service": "authentication-service",
+    "severity": "SEV-3",
+    "description": "authentication-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "INV-409": {
+    "service": "inventory-service",
+    "severity": "SEV-3",
+    "description": "inventory-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "INV-503": {
+    "service": "inventory-service",
+    "severity": "SEV-2",
+    "description": "inventory-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "KAFKA-302": {
+    "service": "inventory-service",
+    "severity": "SEV-3",
+    "description": "inventory-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "CAT-404": {
+    "service": "catalog-service",
+    "severity": "SEV-3",
+    "description": "catalog-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "SEARCH-206": {
+    "service": "catalog-service",
+    "severity": "SEV-3",
+    "description": "catalog-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "CART-409": {
+    "service": "cart-service",
+    "severity": "SEV-3",
+    "description": "cart-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "CACHE-119": {
+    "service": "cart-service",
+    "severity": "SEV-3",
+    "description": "cart-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "NOTIFY-429": {
+    "service": "notification-service",
+    "severity": "SEV-3",
+    "description": "notification-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "KAFKA-305": {
+    "service": "notification-service",
+    "severity": "SEV-3",
+    "description": "notification-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "GW-429": {
+    "service": "api-gateway",
+    "severity": "SEV-3",
+    "description": "api-gateway rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "GW-502": {
+    "service": "api-gateway",
+    "severity": "SEV-3",
+    "description": "api-gateway rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "SEARCH-429": {
+    "service": "search-service",
+    "severity": "SEV-3",
+    "description": "search-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "SEARCH-503": {
+    "service": "search-service",
+    "severity": "SEV-3",
+    "description": "search-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "CUS-409": {
+    "service": "customer-service",
+    "severity": "SEV-3",
+    "description": "customer-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  },
+  "DB-211": {
+    "service": "customer-service",
+    "severity": "SEV-3",
+    "description": "customer-service rejected or could not complete an operation because a required dependency or invariant failed.",
+    "diagnostics": [
+      "correlate the request ID across gateway and service logs",
+      "compare active configuration with the version baseline",
+      "inspect dependency saturation and retry rates"
+    ],
+    "remediation": "Stabilize the dependency, restore the documented configuration baseline, and verify with a canary request before clearing the alert."
+  }
+}

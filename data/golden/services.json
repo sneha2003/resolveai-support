@@ -1,0 +1,165 @@
+{
+  "payment-service": {
+    "owner": "Commerce Payments",
+    "versions": [
+      "4.0",
+      "4.1",
+      "4.2",
+      "4.2.1",
+      "4.3"
+    ],
+    "deps": [
+      "PostgreSQL 16",
+      "Kafka",
+      "Redis"
+    ],
+    "errors": [
+      "PAY-201",
+      "PAY-307",
+      "DB-104",
+      "DB-207"
+    ]
+  },
+  "order-service": {
+    "owner": "Order Lifecycle",
+    "versions": [
+      "3.6",
+      "3.7",
+      "3.7.2",
+      "3.8"
+    ],
+    "deps": [
+      "PostgreSQL 16",
+      "Kafka"
+    ],
+    "errors": [
+      "ORD-502",
+      "ORD-504",
+      "KAFKA-301"
+    ]
+  },
+  "authentication-service": {
+    "owner": "Identity Platform",
+    "versions": [
+      "5.0",
+      "5.1",
+      "5.1.2"
+    ],
+    "deps": [
+      "Redis",
+      "PostgreSQL 16"
+    ],
+    "errors": [
+      "AUTH-401",
+      "AUTH-429",
+      "CACHE-118"
+    ]
+  },
+  "inventory-service": {
+    "owner": "Supply Platform",
+    "versions": [
+      "2.8",
+      "2.9",
+      "2.9.1"
+    ],
+    "deps": [
+      "PostgreSQL 16",
+      "Kafka",
+      "Redis"
+    ],
+    "errors": [
+      "INV-409",
+      "INV-503",
+      "KAFKA-302"
+    ]
+  },
+  "catalog-service": {
+    "owner": "Merchandising",
+    "versions": [
+      "6.2",
+      "6.3"
+    ],
+    "deps": [
+      "OpenSearch",
+      "Redis"
+    ],
+    "errors": [
+      "CAT-404",
+      "SEARCH-206"
+    ]
+  },
+  "cart-service": {
+    "owner": "Checkout Experience",
+    "versions": [
+      "3.2",
+      "3.3"
+    ],
+    "deps": [
+      "Redis",
+      "Kafka"
+    ],
+    "errors": [
+      "CART-409",
+      "CACHE-119"
+    ]
+  },
+  "notification-service": {
+    "owner": "Customer Messaging",
+    "versions": [
+      "2.1",
+      "2.2"
+    ],
+    "deps": [
+      "Kafka"
+    ],
+    "errors": [
+      "NOTIFY-429",
+      "KAFKA-305"
+    ]
+  },
+  "api-gateway": {
+    "owner": "Edge Platform",
+    "versions": [
+      "7.0",
+      "7.1"
+    ],
+    "deps": [
+      "Nginx",
+      "Redis"
+    ],
+    "errors": [
+      "GW-429",
+      "GW-502"
+    ]
+  },
+  "search-service": {
+    "owner": "Discovery Platform",
+    "versions": [
+      "4.4",
+      "4.5"
+    ],
+    "deps": [
+      "OpenSearch",
+      "Kafka"
+    ],
+    "errors": [
+      "SEARCH-429",
+      "SEARCH-503"
+    ]
+  },
+  "customer-service": {
+    "owner": "Customer Domain",
+    "versions": [
+      "2.4",
+      "2.5"
+    ],
+    "deps": [
+      "PostgreSQL 16",
+      "Kafka"
+    ],
+    "errors": [
+      "CUS-409",
+      "DB-211"
+    ]
+  }
+}

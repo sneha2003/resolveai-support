@@ -1,0 +1,46 @@
+{
+  "dataset_size": 50,
+  "note": "Deterministic local TF-IDF fallback; rerun after Qdrant ingestion for production-model results.",
+  "configurations": [
+    {
+      "retriever": "dense",
+      "hit_rate@5": 0.58,
+      "recall@5": 0.3333,
+      "precision@5": 0.116,
+      "mrr": 0.4717,
+      "ndcg@5": 0.5364
+    },
+    {
+      "retriever": "bm25",
+      "hit_rate@5": 0.56,
+      "recall@5": 0.44,
+      "precision@5": 0.148,
+      "mrr": 0.4367,
+      "ndcg@5": 0.4921
+    },
+    {
+      "retriever": "hybrid",
+      "hit_rate@5": 0.56,
+      "recall@5": 0.43,
+      "precision@5": 0.144,
+      "mrr": 0.45,
+      "ndcg@5": 0.5484
+    },
+    {
+      "retriever": "hybrid_rewrite",
+      "hit_rate@5": 0.86,
+      "recall@5": 0.53,
+      "precision@5": 0.204,
+      "mrr": 0.6483,
+      "ndcg@5": 0.5358
+    },
+    {
+      "retriever": "hybrid_rewrite_rerank",
+      "hit_rate@5": 0.74,
+      "recall@5": 0.46,
+      "precision@5": 0.176,
+      "mrr": 0.7267,
+      "ndcg@5": 0.6835
+    }
+  ]
+}

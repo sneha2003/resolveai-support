@@ -1,0 +1,18 @@
+[
+  {
+    "id": "KI-PAY-042",
+    "title": "Payment 4.2 pool oversubscription on PostgreSQL 16",
+    "service": "payment-service",
+    "version": "4.2",
+    "error": "DB-104",
+    "status": "fixed in 4.2.1"
+  },
+  {
+    "id": "KI-ORD-037",
+    "title": "Order consumer restart loop during schema-registry latency",
+    "service": "order-service",
+    "version": "3.7.2",
+    "error": "KAFKA-301",
+    "status": "mitigated by cached schema fallback"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "SUP-1842",
+    "customer": "Aster Retail",
+    "service": "payment-service",
+    "version": "4.2",
+    "error": "DB-104",
+    "wording": "payment backend started choking right after the 4.1 to 4.2 update on Postgres 16",
+    "incident": "INC-2025-018"
+  },
+  {
+    "id": "SUP-1861",
+    "customer": "BlueYonder Market",
+    "service": "payment-service",
+    "version": "4.2",
+    "error": "DB-104",
+    "wording": "checkout keeps timing out after latest update even though payment pods look green",
+    "incident": "INC-2025-018"
+  },
+  {
+    "id": "SUP-1904",
+    "customer": "Northstar Goods",
+    "service": "order-service",
+    "version": "3.7",
+    "error": "KAFKA-301",
+    "wording": "orders finish but confirmations take twenty minutes",
+    "incident": "INC-2025-007"
+  },
+  {
+    "id": "SUP-1933",
+    "customer": "Cobalt Home",
+    "service": "authentication-service",
+    "version": "5.0",
+    "error": "CACHE-118",
+    "wording": "users are randomly signed out during traffic bursts",
+    "incident": "INC-2025-003"
+  },
+  {
+    "id": "SUP-1970",
+    "customer": "Mosaic Wholesale",
+    "service": "inventory-service",
+    "version": "2.9",
+    "error": "INV-409",
+    "wording": "reserved stock is duplicated when messages are replayed",
+    "incident": "INC-2025-011"
+  },
+  {
+    "id": "SUP-2018",
+    "customer": "Evergreen Shop",
+    "service": "payment-service",
+    "version": "4.2.1",
+    "error": "PAY-307",
+    "wording": "bank approved a payment but our UI says it timed out",
+    "incident": "INC-2025-024"
+  },
+  {
+    "id": "SUP-2077",
+    "customer": "Halo Sports",
+    "service": "catalog-service",
+    "version": "6.3",
+    "error": "SEARCH-206",
+    "wording": "search results show yesterday's price for a few minutes",
+    "incident": "INC-2025-031"
+  },
+  {
+    "id": "SUP-2112",
+    "customer": "Juno Office",
+    "service": "api-gateway",
+    "version": "7.1",
+    "error": "GW-429",
+    "wording": "nightly import got rate limited after gateway upgrade",
+    "incident": "INC-2025-037"
+  },
+  {
+    "id": "SUP-2166",
+    "customer": "Kite Outfitters",
+    "service": "order-service",
+    "version": "3.7.2",
+    "error": "KAFKA-301",
+    "wording": "orders pile up whenever schema registry has a wobble",
+    "incident": "INC-2026-002"
+  },
+  {
+    "id": "SUP-2210",
+    "customer": "Lumen Direct",
+    "service": "notification-service",
+    "version": "2.2",
+    "error": "NOTIFY-429",
+    "wording": "receipts wait behind marketing mail",
+    "incident": "INC-2026-006"
+  }
+]
