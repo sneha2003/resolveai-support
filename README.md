@@ -144,6 +144,8 @@ Open `http://localhost:5173`.
 
 ### Public deployment
 
+**Live demo:** [resolveai-support-rmt4.onrender.com](https://resolveai-support-rmt4.onrender.com)
+
 The root `Dockerfile` builds the React frontend and serves it together with the FastAPI backend from one public URL. `render.yaml` defines a free Render web service with `/api/health` as its health check. Create a Render Blueprint from the GitHub repository to deploy it. Free services can take a short time to wake after a period of inactivity.
 
 ### Local AI and credential-free mode
